@@ -1,0 +1,262 @@
+body{
+	font-family: 'Noto Serif JP', serif;
+	padding: 0;
+	margin: 0;
+}
+
+#hometitleflex{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+#titlediv{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	flex-shrink: 10;
+	flex-basis: auto;
+}
+
+#titleLogo{
+	width: 150px;
+	height: 150px;
+	margin: 0;
+}
+
+#line2{
+	letter-spacing: 25pt;
+}
+
+.imgmenucontainer{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-around;
+	width: 100%;
+	height: 35vh;
+
+	flex-shrink: 0;
+	flex-basis: auto;
+}
+
+.imgmenuitem{
+	display: flex;
+	justify-content: space-around;
+	width: 20%;
+	flex-basis: auto;
+	flex-grow: 10;
+	flex-shrink: 1;
+	text-align: left;
+	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: width .5s, flex-grow .5s, flex-shrink .5s;
+}
+
+.imgmenuitem:hover{
+	width: 20%;
+	flex-grow: 20;
+	flex-shrink: 0;
+}
+
+#homeImgGrid {
+	width: 100%;
+}
+
+.limg {
+	/*max-height: 100%;*/
+	height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+	opacity: 100%;
+	transition: opacity .25s, max-height .25s, min-width .25s;
+	cursor: pointer;
+}.limg:hover{
+	opacity: 85%;
+	max-height: 105%;
+	min-width: 105%;
+}
+.imgwide{
+	height: 100%;
+}
+
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 10px;
+	padding-bottom: 60px;
+	width: 75%;
+	margin: 0 auto;
+}
+
+li{
+	height: 45vh;
+	flex-grow: 1;
+	margin: 10px;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	overflow: hidden;
+}
+li:last-child {
+	flex-grow: 10;
+}
+
+h1.title {
+	font-family: 'Noto Serif JP', serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 48pt;
+	letter-spacing: 20pt;
+	margin: 0;
+	margin-top: -5px;
+	padding: 15px;
+}
+
+h2 {
+	font-family: 'Noto Serif JP', serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24pt;
+	letter-spacing: 6pt;
+	color: white;
+	text-shadow: 0 0 5px black, 0 0 10px black;
+}
+
+h2.mainmenu{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #0007;
+	transition: background-color .5s;
+}
+
+h2.mainmenu:hover{
+	background-color: #0000;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Noto Serif JP', serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20pt;
+}
+
+span.narrow{
+	display:inline-block;
+    -webkit-transform:scale(0.75,1); /* Safari and Chrome */
+    -moz-transform:scale(0.75,1); /* Firefox */
+    -ms-transform:scale(0.75,1); /* IE 9 */
+    -o-transform:scale(0.75,1); /* Opera */
+    transform:scale(0.75,1); /* W3C */
+}
+
+#footer{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 10px 0;
+	margin-top: 10px;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+}
+
+
+@media (max-aspect-ratio: 9/7){
+	h1.title{
+		font-size: 24pt;
+	}
+
+	#titleLogo{
+		width:75px;
+		height: 75px;
+	}
+
+	#line2{
+		letter-spacing: 22pt;
+	}
+
+	h2{
+		font-size: 16pt;
+	}
+
+	ul{
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	}
+
+	li{
+		height: auto;
+		max-height: 50vh;
+		width: 100%;
+	}
+
+}
+
+@media (max-aspect-ratio: 1/1){
+
+	.imgmenucontainer{
+		flex-direction: column;
+	}
+
+	.imgmenuitem{
+		width: 100%;
+		height: 15%;
+	}
+
+	.imgmenuitem:hover{
+		width: 100%;
+	}
+
+}
+
+
+html{
+    scrollbar-color: #fff #000;
+    scrollbar-width: auto;
+}
+html::-webkit-scrollbar{
+	background-color: #fff;
+	border-radius: 50px;
+	width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+	background: #000;
+	border-radius: 50px;
+	width: 10px;
+	transition: background .5s;
+}
+html::-webkit-scrollbar-thumb:hover{
+	background: #000;
+}
