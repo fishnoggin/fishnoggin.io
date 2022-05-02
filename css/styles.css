@@ -134,22 +134,24 @@ h1.title {
 h2 {
 	font-family: 'Noto Serif JP', serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 24pt;
 	letter-spacing: 6pt;
-	color: white;
-	text-shadow: 0 0 5px black, 0 0 10px black;
+	
 }
 
 h2.mainmenu{
 	width: 100%;
 	height: 100%;
+	font-weight: 300;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	background-color: #0007;
 	transition: background-color .5s;
+	color: white;
+	text-shadow: 0 0 5px black, 0 0 10px black;
 }
 
 h2.mainmenu:hover{
@@ -159,6 +161,11 @@ h2.mainmenu:hover{
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+a.contact {
+	color: #b04000;
+	text-decoration: underline;
 }
 
 p {
