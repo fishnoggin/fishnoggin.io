@@ -164,6 +164,10 @@ span.narrow{
     transform:scale(0.75,1); /* W3C */
 }
 
+span.bigtext{
+	font-size: 30pt;
+}
+
 #footer{
 	position: fixed;
 	bottom: 0px;
